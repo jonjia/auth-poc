@@ -1,0 +1,14 @@
+
+### Test content get
+GET http://localhost:5000/api/content/1234
+X-User-Id: alice
+
+### Test content post
+POST http://localhost:5000/api/content/1234
+content-type: application/json
+X-User-Id: alice
+
+{
+    "id": "1234",
+    "content": "sample",
+}
